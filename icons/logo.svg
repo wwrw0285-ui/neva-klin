@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" fill="none">
+  <!-- Water drop shape -->
+  <path d="M50 5 C50 5 12 55 12 80 C12 103 29 122 50 122 C71 122 88 103 88 80 C88 55 50 5 50 5 Z"
+        fill="#2EA8E8"/>
+  <!-- Inner water fill (light blue pool at bottom) -->
+  <path d="M20 90 C20 90 28 78 50 78 C72 78 80 90 80 90 C80 90 80 100 80 105 C80 114 66 122 50 122 C34 122 20 114 20 105 C20 100 20 90 20 90 Z"
+        fill="#A8D8F0" opacity="0.75"/>
+  <!-- Highlight glare -->
+  <ellipse cx="38" cy="52" rx="8" ry="10" fill="#FFFFFF" opacity="0.45" transform="rotate(-15 38 52)"/>
+</svg>
