@@ -1,3 +1,56 @@
+# robots.txt для neva-klin.ru
+# Создан: 2026-07-06
+# Оптимизирован для Яндекс и Google
+
+# === ОСНОВНЫЕ ПРАВИЛА ===
 User-agent: *
 Allow: /
+
+# Запрет системных и служебных директорий
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /test/
+
+# Запрет технических файлов
+Disallow: /*.zip$
+Disallow: /*.sql$
+Disallow: /*.log$
+
+# Запрет URL-параметров (дубли страниц)
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?*yclid=
+Disallow: /*?*from=
+Disallow: /*?*openstat=
+
+# === ЯНДЕКС ===
+User-agent: Yandex
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?*yclid=
+Disallow: /*?*from=
+Disallow: /*?*openstat=
+
+# Главное зеркало
+Host: https://neva-klin.ru
+
+# === GOOGLE ===
+User-agent: Googlebot
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?*yclid=
+
+# === КАРТА САЙТА ===
 Sitemap: https://neva-klin.ru/sitemap.xml
