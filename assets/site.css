@@ -303,3 +303,34 @@ footer { background: rgba(241,245,249,.6); border-top: 1px solid var(--border); 
 /* ── ANIM ── */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 .anim { animation: fadeUp .5s both; }
+
+/* ══ Портфолио: галерея примеров работ ══ */
+.gallery-title {
+  font-size: 1.4rem;
+  margin: 2.5rem 0 1.25rem;
+}
+.gallery-title:first-of-type {
+  margin-top: 0;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.gallery-item {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f3f4f6;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+}
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-caption {
+  padding: .75rem 1rem;
+  font-size: .9rem;
+  color: #4b5563;
+}
